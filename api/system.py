@@ -61,7 +61,7 @@ class System():
         return getpass.getuser()
     # 机器人开发
     ret: Any
-    def run_script(self, script):
+    def system_runScript(self, script):
         try:
             exec(script, globals())
             data = {

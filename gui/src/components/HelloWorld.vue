@@ -35,16 +35,16 @@ let creator = ref('pangao')
 
 const getOwner = () => {
   // 获取本机用户名
-  window.pywebview.api.system_getOwner().then((res) => {
-    creator.value = res
-  })
-  // let script = `
-  // ret = 1 + 1
-  // `
-  // window.pywebview.api.run_script(script).then((res) => {
-  //   creator.value = res.data
-  //   console.log(res.data)
+  // window.pywebview.api.system_getOwner().then((res) => {
+  //   creator.value = res
   // })
+  let script = `
+  ret = 1 + 1
+  `
+  window.pywebview.api.system_runScript(script).then((res) => {
+    creator.value = res.data
+    console.log(res.data)
+  })
 }
 </script>
 
