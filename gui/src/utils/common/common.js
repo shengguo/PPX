@@ -88,6 +88,11 @@ common.clearLocalValue = (key) => {
   const msgData = useStorage(key)
   msgData.value = null
 }
+common.run_code = async (script) => {
+  // 执行脚本
+  let ret = await window.pywebview.api.system_runScript(script)
+  return ret
+}
 
 export default common
 

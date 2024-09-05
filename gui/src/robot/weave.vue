@@ -1,6 +1,6 @@
 <template>
   <div class="border rounded-lg" v-for="item in appStore.weaveSettings" :key="item.weaveNum">
-    {{ item.weaveNum }}
+    <!-- {{ item.weaveNum }} -->
     <weaveItem v-show="item.weaveNum === curId + ''" :model-value="item" />
   </div>
   <n-button class="btnStyle" round type="primary" @click="handlePre"> 上一页 </n-button>
