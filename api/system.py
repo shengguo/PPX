@@ -18,6 +18,7 @@ import webview
 
 from pyapp.config.config import Config
 from pyapp.update.update import AppUpdate
+from typing import Any
 
 
 class System():
@@ -58,6 +59,22 @@ class System():
     def system_getOwner(self):
         # 获取本机用户名
         return getpass.getuser()
+    # 机器人开发
+    ret: Any
+    def run_script(self, script):
+        try:
+            exec(script, globals())
+            data = {
+                code: 0,
+                data: ret
+            }
+            return data
+        except Exception as e:
+            data = {
+                code: -1,
+                data: "执行失败：" + str(e)
+            }
+            return data
 
     def system_pyOpenFile(self, path):
         '''用电脑默认软件打开本地文件'''
