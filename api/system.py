@@ -62,7 +62,7 @@ class System():
     # 机器人开发
     
     def system_runScript(self, script):
-        ret: Any
+        ret = None
         try:
             exec(script, globals())
             data = {
