@@ -39,7 +39,7 @@ const getOwner = () => {
   //   creator.value = res
   // })
   let script = `
-  ret = 1 + 1
+ret = 1 + 1
   `
   window.pywebview.api.system_runScript(script).then((res) => {
     creator.value = res.data

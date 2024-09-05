@@ -60,19 +60,20 @@ class System():
         # 获取本机用户名
         return getpass.getuser()
     # 机器人开发
-    ret: Any
+    
     def system_runScript(self, script):
+        ret: Any
         try:
             exec(script, globals())
             data = {
-                code: 0,
-                data: ret
+                "code": 0,
+                "data": ret
             }
             return data
         except Exception as e:
             data = {
-                code: -1,
-                data: "执行失败：" + str(e)
+                "code": -1,
+                "data": "执行失败：" + str(e)
             }
             return data
 
