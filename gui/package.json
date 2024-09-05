@@ -23,7 +23,8 @@
     "unplugin-auto-import": "^0.16.6",
     "unplugin-icons": "^0.16.5",
     "unplugin-vue-components": "^0.25.1",
-    "@vueuse/core": "^10.3.0"
+    "@vueuse/core": "^10.3.0",
+    "vite-plugin-svg-icons": "^2.0.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.0",

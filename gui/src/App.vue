@@ -3,9 +3,7 @@ import HelloWorld from './robot/HelloWorld.vue'
 </script>
 
 <template>
-  <div class="center-col h100 w100 scroll">
-    <HelloWorld />
-  </div>
+  <HelloWorld />
 </template>
 
 <style>

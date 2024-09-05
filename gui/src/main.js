@@ -1,6 +1,10 @@
+/** 重置样式 */
+import '@/styles/reset.css'
+import 'uno.css'
+import '@/styles/global.scss'
+// import 'virtual:svg-icons-register'
 import { createApp } from 'vue'
 import App from './App.vue'
-
 const app = createApp(App)
 
 // 组件库 ElementPlus
@@ -19,9 +23,6 @@ for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
 // 自定义图标库
 import SvgIcon from '@/components/SvgIcon/index.vue'
 app.component('SvgIcon', SvgIcon)
-
-// 自定义样式
-import '@/assets/main.scss'
 //挂载到公共函数common
 app.config.globalProperties.$common = common
 
