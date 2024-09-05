@@ -62,9 +62,10 @@ class System():
     # 机器人开发
     
     def system_runScript(self, script):
-        ret = None
+        local_vars = {}  # 创建一个局部变量字典
         try:
-            exec(script, globals())
+            exec(script, globals(), local_vars)  # 将局部变量传递给 exec
+            ret = local_vars.get('ret', None)  # 从局部变量中获取 ret
             data = {
                 "code": 0,
                 "data": ret
