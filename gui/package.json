@@ -11,7 +11,19 @@
   "dependencies": {
     "@element-plus/icons-vue": "^2.1.0",
     "element-plus": "^2.3.4",
-    "vue": "^3.2.47"
+    "vue": "^3.2.47",
+    "sass": "^1.65.1",
+    "naive-ui": "^2.34.4",
+    "pinia": "^2.1.6",
+    "dayjs": "^1.11.9",
+    "@iconify/vue": "^4.1.1",
+    "@unocss/eslint-config": "^0.55.0",
+    "unocss": "^0.55.0",
+    "vue3-ace-editor": "^2.2.4",
+    "unplugin-auto-import": "^0.16.6",
+    "unplugin-icons": "^0.16.5",
+    "unplugin-vue-components": "^0.25.1",
+    "@vueuse/core": "^10.3.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.0",
